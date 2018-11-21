@@ -45,13 +45,11 @@
 \newcommand{\phonesymbol}{\faPhone}
 \newcommand{\homepagesymbol}{\faChain}
 \newcommand{\locationsymbol}{\faMapMarker}
-\newcommand{\versionsymbol}{\faCodeFork}
 \newcommand{\linkedinsymbol}{\faLinkedin}
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
-\newcommand{\agesymbol}{\faBirthdayCake}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
@@ -67,8 +65,6 @@
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
-\newcommand{\age}[1]
-{\printinfo{\agesymbol}{#1}}
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
@@ -104,9 +100,9 @@
 }
 
 \newcommand{\cvevent}[4]{%
-  {\large\color{accent}#1\par}
+  {\large\color{emphasis}#1\par}
   \smallskip
-  \textbf{\color{emphasis}#2}\par
+  \textbf{\color{accent}#2}\par
   \smallskip
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
   \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
