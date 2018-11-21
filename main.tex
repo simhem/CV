@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.0.1, 11 September 2016) written by LianTze Lim (liantze@gmail.com).
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you'll need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to.
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+\begin{document}
+\name{Hemi Simon}
+\tagline{Ingénieur informatique DevOps}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{simon.hemi@gmail.com}
+  \phone{+33637877136}
+  \mailaddress{79 rue des Baconnets, 92160 Antony, France}
+  \location{France}
+  \linkedin{www.linkedin.com/in/simon-hemi-784a46b4}
+  \age{24 ans}
+  \versionsymbol{v2018m07}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+\cvsection[page1sidebar]{Etudes et diplômes}
+
+\cvevent{Diplôme d’ingénieur en génie informatique 
+\newline \textit{\small{Filière système et réseaux} informatique}}{UTC - Université technologique de Compiègne}{Sept 2014 - Sept 2017}{Compiegne – France}
+\divider
+
+\cvevent{DUT informatique}{IUT Orsay}{Sept 2012 - Sept 2014}{Orsay – France}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection{Expérience}
+
+\cvevent{Stage : Software development}{Siemens Corporate Technology}{Fevr 2017 – Aout 2017 (6 mois)}{Princeton – Etats-Unis}
+\begin{itemize}
+\item Analyse/Développement de logiciels (\textbf{C\# / C++})
+\end{itemize}
+
+\divider
+
+\cvevent{Stage : développement d’un FrameWorkHTML5}{Aubay}{Sept 2015 – Fevr 2016 (6 mois)}{Boulogne-Billancourt – France}
+\begin{itemize}
+\item Développement d'intégration continue (\textbf{NodeJs}) 
+\item Etude et développement d'un Framework selon les nouveaux standards du web (\textbf{JS ES6 / HTML / CSS})
+\end{itemize}
+
+\divider
+
+\cvevent{Association : Junior Ingénieur d'affaire}{USEC, Junior entreprise}{Fevr 2015 – Sept 2015 (6 mois)}{Compiegne - France}
+\begin{itemize}
+\item Gestion de projet \& relations client (\textbf{Agile})
+\end{itemize}
+
+\divider
+
+\cvevent{Stage : développement VBA sous Excel}{Ericsson}{Avr 2014 – Juil 2014 (3 mois)}{Massy - France}
+\begin{itemize}
+\item Développement Macro sous Excel (\textbf{VBA}) 
+\end{itemize}
+
+\medskip
+
+\cvsection{Projets}
+
+\cvachievement{\faLaptop}{Sniffer sur réseau local}{Etude des sniffers, mise en place et détection sur un réseau virtuel local
+\newline \textbf{Shell, Virtualisation, Sniffers, IDS}}
+
+\divider
+
+\cvachievement{\faLaptop}{Site web pour l'"Ecole National de la Magistrature"}{Développement d'un site web aidant à la recherche de nouveaux articles de lois concernant la succession \newline \textbf{Stack WAMP}}
+
+\clearpage
+
+
+\end{document}
