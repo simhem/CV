@@ -36,6 +36,7 @@
 \RequirePackage{dashrule}
 \RequirePackage{multirow,tabularx}
 \RequirePackage{changepage}
+\usepackage{comment}
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
@@ -109,7 +110,7 @@
   \textbf{\color{emphasis}#2}\par
   \smallskip
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
-  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\hspace{0.8em}\faMapMarker\hspace{0.5em}#4}}\par}
   \medskip
 }
 
