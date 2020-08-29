@@ -11,7 +11,7 @@
 %% version 2003/12/01 or later.
 %%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{altacv}[2016/09/11 AltaCV, yet another alternative class for a résumé/curriculum vitae.]
+\ProvidesClass{altacv}[2020/08/29 fork AltaCV, yet another alternative class for a résumé/curriculum vitae.]
 \LoadClass{article}
 
 \RequirePackage[margin=2cm]{geometry}
@@ -53,6 +53,9 @@
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
 \newcommand{\agesymbol}{\faBirthdayCake}
+\newcommand{\football}{\faFutbolO}
+\newcommand{\music}{\faMusic}
+\newcommand{\plane}{\faPlane}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
@@ -123,7 +126,7 @@
 }
 
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=body!30,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
 \newcommand{\cvskill}[2]{%
